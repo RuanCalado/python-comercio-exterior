@@ -1,10 +1,16 @@
 # Primeiro exercício: variáveis e cálculo de peso
 
-produto = "Pneu 14.00-24"
-quantidade = 10 
-peso_unitario = 82.5
+produto = input("informe o produto:")
+quantidade = int(input("Digite a quantidade: "))
+peso_unitario = float(input("Digite o peso unitário:"))
 
 peso_total = quantidade * peso_unitario
+if peso_total <= 1000:
+    print("Carga leve")
+elif peso_total <=5000:
+    print("Carga média")
+else:
+    print("Carga pesada")
 
 print("Produto:", produto)
 print("Quantidade:", quantidade)
