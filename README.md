@@ -37,4 +37,4 @@ O histórico de commits fará parte do aprendizado. A intenção é registrar a 
 
 ---
 
-**Status:** estrutura inicial do repositório.
+**Status:** ambiente local configurado e estudos iniciados.
