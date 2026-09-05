@@ -1,9 +1,17 @@
 # Exercício: validação simples
 
-quantidade_invoice = 100
+quantidade_invoice = 120
 quantidade_pl = 100
 
-if quantidade_invoice == quantidade_pl:
-    print("OK: as quantidades conferem.")
+diferenca = abs(quantidade_invoice - quantidade_pl)
+
+if quantidade_invoice > quantidade_pl:
+    print("A Invoice possui", diferenca, "itens a mais que o PL")
+elif quantidade_invoice < quantidade_pl:
+    print("A Invoice possui", diferenca, "itens a menos que o PL")
 else:
-    print("ALERTA: as quantidades divergem.")
+    print("OK: as quantidades conferem.")
+
+print("Quantidade Invoice:", quantidade_invoice)
+print("Quantidade Pl:", quantidade_pl)
+print("Diferença:", diferenca)
